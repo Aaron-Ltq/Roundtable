@@ -95,12 +95,12 @@
     border:1px solid rgba(255,255,255,0.18);
     background:rgba(255,255,255,0.06);
     box-shadow:0 24px 60px rgba(0,0,0,0.35);
-    padding:1.5rem 1.75rem;
+    padding:1.4rem 1.7rem;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:1rem;
+    gap:.8rem;
     backface-visibility:hidden;
   }
   .card-back{transform:rotateY(180deg);}
@@ -115,7 +115,16 @@
     line-height:1.5;
     max-width:90%;
   }
-  .card-back .card-sentence{color:rgba(255,255,255,0.92);}
+  .card-back{
+    gap:.55rem;
+    padding:1.35rem 1.6rem;
+  }
+  .card-back .card-number{margin-bottom:-.15rem;}
+  .card-back .card-name{margin:0;}
+  .card-back .card-sentence{
+    color:rgba(255,255,255,0.92);
+    max-width:100%;
+  }
   .card-name{
     font-size:1.6rem;
     font-weight:600;
